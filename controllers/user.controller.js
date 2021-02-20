@@ -32,20 +32,7 @@ class UserController {
     
     // [POST] /create
     createPost(req, res, next){
-        var errors = [];
-        if(!req.body.name){
-            errors.push("name is required!!!");
-        }
-        if(!req.body.phone){
-            errors.push("phone is required!!!");
-        }
-        if(errors.length){
-            res.render('./user/create',{
-                errors: errors,
-                values: req.body
-            })
-            return;
-        }
+
         req.body.id = shortid.generate();
         db.get('users').push(req.body).write();
     

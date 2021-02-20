@@ -1,7 +1,6 @@
 const express = require('express');
-shortid = require('shortid');
 const UserController = require('../controllers/user.controller');
-
+const Validate = require('../validate/user.validate');
 const db = require('../db');
 
 var router = express.Router();
@@ -13,7 +12,7 @@ router.get('/search', UserController.search);
 
 router.get('/create',UserController.create);
 
-router.post('/create', UserController.createPost);
+router.post('/create', Validate.postValidate, UserController.createPost);
 
 router.get('/:id', UserController.viewDetail);
 
