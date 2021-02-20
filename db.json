@@ -1,0 +1,42 @@
+{
+  "user": [],
+  "users": [
+    {
+      "id": "1",
+      "name": "nam"
+    },
+    {
+      "id": "2",
+      "name": "Phùng Xuân Nam"
+    },
+    {
+      "id": "3",
+      "name": "ReactJS"
+    },
+    {
+      "name": "React Native",
+      "id": "iZwr0INRB"
+    },
+    {
+      "name": "NodeJS",
+      "id": "ldgwqp8Jl"
+    },
+    {
+      "name": "ha ngu",
+      "id": "e9WhYzm-U"
+    },
+    {
+      "name": "ha ngu",
+      "id": "LLlqwx7ia"
+    },
+    {
+      "name": "Phùng Xuân Nam 1",
+      "id": "V8qcWVfok"
+    },
+    {
+      "name": "Nam Phung",
+      "phone": "0981198521",
+      "id": "wx9YxOh4a"
+    }
+  ]
+}

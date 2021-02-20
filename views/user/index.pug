@@ -1,0 +1,22 @@
+extends ../layouts/common
+block content
+  h1 create new user
+  .d-flex.align-items-center
+    a(href='/user/create' class="btn btn-primary") create user
+    form(action='/user/search', method='GET',class="mb-0 ml-auto")
+      .form-group.mb-0
+        label Name 
+        input(name='name',type='text',class='ml-4' value = value)
+        button(class='btn btn-primary ml-4') search
+  table.table
+    tr
+      th name 
+      th phone 
+      th view detail
+    each user in users
+      tr
+        td= user.name
+        td= user.phone
+
+        td
+          a(href="/user/" + user.id) view

@@ -1,0 +1,18 @@
+extends ../layouts/common
+
+block content
+    h1 create new user
+    if errors   
+        each error in errors
+            alert.alert-danger= error
+
+    form(action='/user/create' method='POST')
+        .form-group
+            label(for = 'name') name
+            input#name.form-control(name='name' type = 'text' value = values ? values.name : "")
+        .form-group
+            label(for="phone") phone
+            input#phone.form-control(name="phone" type = 'text' value = values ? values.phone : "")
+
+        button(class='btn btn-primary') create
+    a(href="/user") back
